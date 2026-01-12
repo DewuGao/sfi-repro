@@ -1,4 +1,8 @@
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.18221258.svg)](https://doi.org/10.5281/zenodo.18221258)
+
 # SFI reproducibility release (public) — v1.4.7.1
+
+**Cite this fixed version (v1.4.7.1):** https://doi.org/10.5281/zenodo.18221259
 
 This release contains **derived, machine-readable outputs** that support the paper’s reported results, together with **minimal scripts** to re-generate the key summary numbers and table-like CSVs from the released derived outputs (CPU-only; no GPU required).
 
