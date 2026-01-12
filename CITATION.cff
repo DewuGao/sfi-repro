@@ -1,0 +1,23 @@
+cff-version: 'v1.4.7'
+title: "SFI reproducibility release (public)"
+version: "1.4.7.1"
+message: "If you use this release package, please cite it."
+authors:
+  - family-names: Gao
+    given-names: Dewu
+  - family-names: Huang
+    given-names: Ying
+  - family-names: Shi
+    given-names: Ao
+  - family-names: Yang
+    given-names: Hao
+  - family-names: Wan
+    given-names: Guo
+  - family-names: Li
+    given-names: Xingli
+  - family-names: Yi
+    given-names: Yong
+license: "MIT"
+repository-code: "REPLACE_WITH_REPO_URL"
+doi: "REPLACE_WITH_DOI"
+date-released: "2026-01-12"

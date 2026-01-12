@@ -1,0 +1,9 @@
+metric,dimension
+Sem_CLIP-S,Semantic
+Per_LPIPS-O,Perceptual
+Str_SSIM-D,Structure
+Str_EH-D,Structure
+Col_HSV-M,Colour
+Col_HSV-B,Colour
+Tex_Gram-D,Texture
+Tex_GLCM-C,Texture

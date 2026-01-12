@@ -1,0 +1,8 @@
+sd3_ref,release_path,note
+DIST_master_long.csv,derived_outputs/distances/DIST_master_long_public_v1.csv,
+fusion_metric_weight_20250904_152239.csv,derived_outputs/fusion/fusion_metric_weight_baseline_v1.csv,
+validation_outputs/stability_relci_summary.csv,derived_outputs/validation/stability_relci_summary_v1.csv,
+validation_outputs/convergent_results.csv,derived_outputs/validation/construct_validity_3set_summary_v1.csv (summary),consolidated summary
+validation_outputs/direction_convergent_summary.csv,derived_outputs/validation/direction_convergent_summary_v1.csv,
+DimFS_long_from_MFS_20260106.csv,derived_outputs/dimfs/DimFS_long_v1.csv.gz,
+DimFS_rescue_process_20260106.json,audit/DimFS_audit_process_v1.json,audit record (renamed)

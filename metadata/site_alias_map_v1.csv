@@ -1,0 +1,3 @@
+raw_label,canonical_site,note
+enguangtan,enguangtang,Spelling normalisation for reporting and release package.
+yuantong,enguangtang,Internal subfolder label during acquisition; merged into canonical site name for reporting. Files formerly under yuantong were prefixed with 'B_' after merging to avoid filename collisions.

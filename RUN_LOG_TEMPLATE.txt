@@ -1,0 +1,17 @@
+SFI reproducibility run log (template)
+
+Fill in the fields below when you verify this package on your machine.
+
+timestamp: YYYY-MM-DDThh:mm:ss
+python: <path-to-python or 'python'>
+root: <path-to-package-root>
+
+commands:
+1) python scripts/reproduce_key_numbers.py --root . --out repro_outputs
+2) python scripts/reproduce_tables.py --root . --out repro_outputs/tables
+
+notes:
+- OS:
+- Python version:
+- pandas version:
+- numpy version:

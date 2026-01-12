@@ -1,0 +1,149 @@
+{
+  "inputs": {
+    "MFS_long_table": {
+      "path": "MFS_PM0p55_capP99p7_long_withID_20250904_172939.csv",
+      "sha256": "040c384fabec4ccd47b59324b545c549c893eb5e949a1c1332569574a5b4788f",
+      "rows": 19248,
+      "cols": [
+        "image_uid",
+        "style",
+        "metric",
+        "MFS"
+      ]
+    },
+    "Supplementary_Data_2": {
+      "path": "Supplementary_Data_2.json",
+      "sha256": "8d6c3e20dabd622879c99d1bd9ae67a73b26152abd389552a89cdfc28ba4b98f"
+    },
+    "Supplementary_Data_3": {
+      "path": "Supplementary_Data_3.json",
+      "sha256": "1e83484973ca52a86c7d954eac7b8c4b021bccfcd40405cb5108915e9f9e2794"
+    }
+  },
+  "dimfs_computation": {
+    "definition": "DimFS(image, dimension) = sum_{m in dim} (w_m / sum_{k in dim} w_k) * MFS(image, m)",
+    "metric_to_dimension": {
+      "Tex_Gram-D": "Texture",
+      "Tex_GLCM-C": "Texture",
+      "Str_SSIM-D": "Structure",
+      "Str_EH-D": "Structure",
+      "Col_HSV-B": "Colour",
+      "Col_HSV-M": "Colour",
+      "Per_LPIPS-O": "Perceptual",
+      "Sem_CLIP-S": "Semantic"
+    },
+    "w_m_baseline": {
+      "Col_HSV-B": 0.1131203675734957,
+      "Col_HSV-M": 0.1172519058397705,
+      "Per_LPIPS-O": 0.1661267313399393,
+      "Sem_CLIP-S": 0.236747583185953,
+      "Str_EH-D": 0.1215263877444801,
+      "Str_SSIM-D": 0.1252270243163612,
+      "Tex_GLCM-C": 0.0596380126873997,
+      "Tex_Gram-D": 0.0603619873126002
+    },
+    "w_dim_sum": {
+      "Colour": 0.23037227341326622,
+      "Perceptual": 0.1661267313399393,
+      "Semantic": 0.236747583185953,
+      "Structure": 0.2467534120608413,
+      "Texture": 0.1199999999999999
+    }
+  },
+  "outputs": {
+    "DimFS_long_csv": {
+      "path": "derived_outputs/dimfs/DimFS_long_v1.csv.gz",
+      "sha256": "ca3f66aa89963f10d52b7ca8ca1512caecc97f740f86f5418c479528fbf0f137",
+      "rows": 12030
+    },
+    "Process_json": {
+      "path": "audit/DimFS_audit_process_v1.json",
+      "sha256": "8905c33b6880d68433952e174c7c14e71be4c44ea4fcb233624857b557e78efc"
+    },
+    "Stability_results_xlsx": {
+      "path": "audit/DimFS_stability_audit_v1.xlsx",
+      "sha256": "6eef59ede0c790ece6863d171b4b50f9413e6e19fbfb260e42d1495e3f169051"
+    }
+  },
+  "stability_audit": {
+    "definition": "rel_ci = (CI95_width of bootstrap median DimFS) / scale; scale=IQR if >eps else MADN; CI95 from bootstrap percentiles [2.5,97.5]",
+    "bootstrap": {
+      "B": 2000,
+      "seed": 20251105,
+      "ci_percentiles": [
+        2.5,
+        97.5
+      ],
+      "eps": 1e-09
+    },
+    "thresholds": {
+      "scale_main": "IQR",
+      "scale_backup": "MADN",
+      "median_thr_pass": 0.25,
+      "median_border_band": [
+        0.25,
+        0.3
+      ],
+      "p80_thr_pass": 0.45,
+      "tiers": {
+        "strong": {
+          "median_max": 0.2,
+          "p80_max": 0.35
+        },
+        "pass": {
+          "median_max": 0.25,
+          "p80_max": 0.45
+        },
+        "borderline": {
+          "median_range": [
+            0.25,
+            0.3
+          ],
+          "p80_max": 0.45
+        },
+        "fail": {
+          "median_min_exclusive": 0.3,
+          "p80_min_exclusive": 0.45,
+          "label": "low stability (diagnostic; flag for cautious interpretation, not standalone rejection)"
+        }
+      }
+    },
+    "results_dimension_summary": [
+      {
+        "dimension": "Colour",
+        "rel_ci_median_across_styles": 0.19379817982929207,
+        "rel_ci_p80_across_styles": 0.43682452310241765,
+        "tier": "pass",
+        "n_styles": 5
+      },
+      {
+        "dimension": "Perceptual",
+        "rel_ci_median_across_styles": 0.2077753186262096,
+        "rel_ci_p80_across_styles": 0.36590115425170344,
+        "tier": "pass",
+        "n_styles": 5
+      },
+      {
+        "dimension": "Semantic",
+        "rel_ci_median_across_styles": 0.23341152374954124,
+        "rel_ci_p80_across_styles": 0.3386982893623338,
+        "tier": "pass",
+        "n_styles": 5
+      },
+      {
+        "dimension": "Structure",
+        "rel_ci_median_across_styles": 0.29886598831598044,
+        "rel_ci_p80_across_styles": 0.3224233667380663,
+        "tier": "borderline",
+        "n_styles": 5
+      },
+      {
+        "dimension": "Texture",
+        "rel_ci_median_across_styles": 0.2365082530598696,
+        "rel_ci_p80_across_styles": 0.37936109258263184,
+        "tier": "pass",
+        "n_styles": 5
+      }
+    ]
+  }
+}
