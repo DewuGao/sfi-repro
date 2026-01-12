@@ -1,0 +1,13 @@
+# Repro outputs (generated)
+repro_outputs/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS cruft
+.DS_Store
+Thumbs.db
