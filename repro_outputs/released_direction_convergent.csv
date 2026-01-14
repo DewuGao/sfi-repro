@@ -1,0 +1,6 @@
+dimension,rho_img,rho_style,pass_direction,orientation
+Colour,0.9941845383173512,0.8999999999999998,True,1
+Texture,0.5139162057445418,1.0,True,1
+Structure,0.9709380756965972,0.8999999999999998,True,1
+Semantic,-0.9999287114933324,-1.0,True,-1
+Perceptual,0.9966391271006813,1.0,True,1
