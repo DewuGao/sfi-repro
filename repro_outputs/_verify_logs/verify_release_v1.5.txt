@@ -1,0 +1,121 @@
+Running: D:\Anaconda3\envs\sfi_ref_demo\python.exe C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5\scripts\verify_checksums.py --root C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5
+OK       .gitignore
+OK       CHANGELOG.md
+OK       CITATION.cff
+OK       LICENSE
+OK       README.md
+OK       RUN_LOG_TEMPLATE.txt
+OK       VERSION
+OK       audit/DimFS_audit_process_v1.json
+OK       audit/DimFS_stability_audit_v1.xlsx
+OK       derived_outputs/dimfs/DimFS_long_v1.csv.gz
+OK       derived_outputs/distances/DIST_master_long_public_v1.csv
+OK       derived_outputs/distances/DIST_master_long_public_v1.csv.gz
+OK       derived_outputs/fusion/fusion_metric_weight_baseline_v1.csv
+OK       derived_outputs/validation/construct_validity_3set_summary_v1.csv
+OK       derived_outputs/validation/direction_convergent_summary_v1.csv
+OK       derived_outputs/validation/stability_relci_summary_v1.csv
+OK       docs/DERIVED_OUTPUTS_PIPELINE_PSEUDOCODE.md
+OK       environment.yml
+OK       metadata/file_map.csv
+OK       metadata/metric_to_dimension_v1.csv
+OK       metadata/site_alias_map_v1.csv
+OK       metadata/style_map_v1.csv
+OK       reference_impl_demo/README_REFERENCE_IMPL_DEMO.md
+OK       reference_impl_demo/demo_data/Eva_Set/CH-AD/DSC_1996.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-AD/DSC_2084.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-AD/DSC_2087.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-AD/DSC_2201.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-AD/DSC_2308.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-BAR/DSC_2507.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-BAR/DSC_2604.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-BAR/DSC_2607.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-BAR/DSC_2625.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-BAR/DSC_2639.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-BYZ/DSC_2796.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-BYZ/DSC_2803.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-BYZ/DSC_2807.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-BYZ/DSC_2818.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-BYZ/_DSC0107.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-GOTH/DSC_2787.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-GOTH/_DSC0078.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-GOTH/_DSC0083.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-GOTH/_DSC0086.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-GOTH/_DSC0099.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-NEO/DSC_3400.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-NEO/DSC_3589.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-NEO/_DSC0987.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-NEO/_DSC1045.jpg
+OK       reference_impl_demo/demo_data/Eva_Set/CH-NEO/_DSC1084.jpg
+OK       reference_impl_demo/demo_data/Ref_C/DSC_2651.jpg
+OK       reference_impl_demo/demo_data/Ref_C/DSC_2684.jpg
+OK       reference_impl_demo/demo_data/Ref_C/DSC_2881.jpg
+OK       reference_impl_demo/demo_data/Ref_C/DSC_3169.jpg
+OK       reference_impl_demo/demo_data/Ref_C/DSC_3260.jpg
+OK       reference_impl_demo/demo_data/Ref_C/DSC_3359.jpg
+OK       reference_impl_demo/demo_data/Ref_C/DSC_3385.jpg
+OK       reference_impl_demo/demo_data/Ref_C/_DSC0011.jpg
+OK       reference_impl_demo/demo_data/Ref_C/_DSC0155.jpg
+OK       reference_impl_demo/demo_data/Ref_C/_DSC0288.jpg
+OK       reference_impl_demo/demo_data/Ref_C/_DSC0315.jpg
+OK       reference_impl_demo/demo_data/Ref_C/_DSC0558.jpg
+OK       reference_impl_demo/demo_data/Ref_C/_DSC0592.jpg
+OK       reference_impl_demo/demo_data/Ref_C/_DSC0642.jpg
+OK       reference_impl_demo/demo_data/Ref_C/_DSC0812.jpg
+OK       reference_impl_demo/demo_data/Ref_C/_DSC0866.jpg
+OK       reference_impl_demo/demo_data/Ref_C/_DSC9900.jpg
+OK       reference_impl_demo/demo_data/Ref_C/_DSC9901.jpg
+OK       reference_impl_demo/demo_data/demo_manifest.csv
+OK       reference_impl_demo/reference_impl/README_REFERENCE.md
+OK       reference_impl_demo/reference_outputs/DIST_demo_long.csv
+OK       reference_impl_demo/reference_outputs/RUN_EXITCODE.txt
+OK       reference_impl_demo/reference_outputs/RUN_NOTES.txt
+OK       reference_impl_demo/reference_outputs/RUN_STDERR.txt
+OK       reference_impl_demo/reference_outputs/RUN_STDOUT.txt
+OK       reference_impl_demo/reference_outputs/checksums_sha256_reference_outputs.txt
+OK       reference_impl_demo/reference_outputs/runlog_demo.json
+OK       reference_impl_demo/requirements_reference_impl.txt
+OK       reference_impl_demo/scripts/make_reference_outputs_checksums.py
+OK       reference_impl_demo/scripts/run_reference_demo.py
+OK       reference_impl_demo/scripts/verify_demo_manifest.py
+OK       repro_outputs/RUN_NOTES.txt
+OK       repro_outputs/dimfs_agreement.csv
+OK       repro_outputs/dimfs_summary_by_style_dimension.csv
+OK       repro_outputs/directional_summary_by_dimension.csv
+OK       repro_outputs/directional_summary_by_metric.csv
+OK       repro_outputs/key_numbers.csv
+OK       repro_outputs/released_construct_validity.csv
+OK       repro_outputs/released_direction_convergent.csv
+OK       repro_outputs/released_stability_relci.csv
+OK       repro_outputs/tables/table_dimfs_summary_by_style.csv
+OK       repro_outputs/tables/table_dimfs_summary_overall.csv
+OK       repro_outputs/tables/table_directional_by_dimension.csv
+OK       repro_outputs/tables/table_directional_by_metric.csv
+OK       repro_outputs/tables/table_metric_weights.csv
+OK       repro_outputs/tables/table_mfs_summary_by_style.csv
+OK       repro_outputs/tables/table_released_construct_validity.csv
+OK       repro_outputs/tables/table_released_direction_convergent.csv
+OK       repro_outputs/tables/table_released_stability_relci.csv
+OK       requirements.txt
+OK       scripts/_utils.py
+OK       scripts/reproduce_key_numbers.py
+OK       scripts/reproduce_tables.py
+OK       scripts/verify_checksums.py
+OK       scripts/verify_release.py
+---
+OK: 103, MISSING: 0, MISMATCH: 0
+
+Running: D:\Anaconda3\envs\sfi_ref_demo\python.exe C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5\scripts\reproduce_key_numbers.py --root C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5 --out C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5\repro_outputs
+C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5\scripts\_utils.py:72: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({"DimFS_calc": np.average(g["FS"].to_numpy(), weights=g["w_dim"].to_numpy())}))
+C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5\scripts\_utils.py:86: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({"MFS": np.average(g["FS"].to_numpy(), weights=g["w_fuse"].to_numpy())}))
+
+Running: D:\Anaconda3\envs\sfi_ref_demo\python.exe C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5\scripts\reproduce_tables.py --root C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5 --out C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5\repro_outputs\tables
+C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5\scripts\_utils.py:86: FutureWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  .apply(lambda g: pd.Series({"MFS": np.average(g["FS"].to_numpy(), weights=g["w_fuse"].to_numpy())}))
+
+---
+Verification PASSED.
+Key numbers: C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5\repro_outputs\key_numbers.csv
+Tables: C:\Users\41464\SFI_gallery\sfi-repro-v1.5_release_bundle\sfi-repro-v1.5\DewuGao-sfi-repro-v1.5\repro_outputs\tables (9 files)

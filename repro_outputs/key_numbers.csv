@@ -1,0 +1,10 @@
+key,value
+n_images,2406.0
+n_metrics,8.0
+n_dimensions,5.0
+power_mean_p,0.55
+mfs_mean,0.47362653454487436
+mfs_median,0.4683131894882228
+dimfs_absdiff_mean,0.0016556312082859266
+dimfs_absdiff_max,0.014576540429623641
+direction_p_closer_CN_overall,0.6945137157107232

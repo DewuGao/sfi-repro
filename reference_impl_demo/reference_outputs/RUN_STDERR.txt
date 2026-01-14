@@ -1,0 +1,4 @@
+/mnt/data/demo_publish_scheme1_ultralite/scripts/run_reference_demo.py:75: DeprecationWarning: 'mode' parameter is deprecated and will be removed in Pillow 13 (2026-10-15)
+  im = Image.fromarray(rgb_u8, mode="RGB").convert("HSV")
+/opt/pyvenv/lib/python3.11/site-packages/pandas/core/indexes/base.py:7834: RuntimeWarning: invalid value encountered in cast
+  values = values.astype(str)

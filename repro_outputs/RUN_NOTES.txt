@@ -1,0 +1,2 @@
+POWER_MEAN_P=0.55
+Note: City-level calibrated SFI is not recomputed here because city aggregation and calibration parameters are not part of this public release.

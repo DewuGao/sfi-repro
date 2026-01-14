@@ -1,0 +1,14 @@
+{
+  "eva_set": "C:\\Users\\41464\\SFI_gallery\\demo_publish_scheme1_bundle_ULTRALITE\\demo_data\\Eva_Set",
+  "ref_c": "C:\\Users\\41464\\SFI_gallery\\demo_publish_scheme1_bundle_ULTRALITE\\demo_data\\Ref_C",
+  "ref_w": null,
+  "n_eval": 25,
+  "n_ref_c": 18,
+  "n_ref_w_total": 0,
+  "metrics": [
+    "Col_HSV-B_demo",
+    "Str_SSIM-D_demo"
+  ],
+  "image_size": 512,
+  "notes": "Demo reference implementation; not intended to reproduce paper results."
+}

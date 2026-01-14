@@ -1,0 +1,3 @@
+Wrote: /mnt/data/demo_publish_scheme1_ultralite/reference_outputs/DIST_demo_long.csv
+Wrote: /mnt/data/demo_publish_scheme1_ultralite/reference_outputs/runlog_demo.json
+Rows: 50

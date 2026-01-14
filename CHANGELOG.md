@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.5 (2026-01-14)
+
+- Bundled `reference_impl_demo/` (Scheme X / ULTRALITE): minimal reference implementation + demo dataset + evidence artifacts.
+- Updated release metadata for v1.5.
+
+
 ## v1.4.7.1
 - Minor documentation fix: clarify checksum scope (checksum file excluded).
 

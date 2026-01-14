@@ -1,6 +1,6 @@
-cff-version: 'v1.4.7'
+cff-version: 1.2.0
 title: "SFI reproducibility release (public)"
-version: "1.4.7.1"
+version: v1.5
 message: "If you use this release package, please cite it."
 authors:
   - family-names: Gao
@@ -20,4 +20,4 @@ authors:
 license: "MIT"
 repository-code: "REPLACE_WITH_REPO_URL"
 doi: "REPLACE_WITH_DOI"
-date-released: "2026-01-12"
+date-released: 2026-01-14
