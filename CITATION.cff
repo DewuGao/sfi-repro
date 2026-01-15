@@ -21,5 +21,5 @@ authors:
   - family-names: Yi
     given-names: Yong
 
-repository-code: "REPO_URL"
-url: "REPO_URL"
+repository-code: "https://github.com/DewuGao/sfi-repro"
+url: "https://github.com/DewuGao/sfi-repro"
