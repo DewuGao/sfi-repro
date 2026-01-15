@@ -17,7 +17,7 @@ It is designed for **independent verification** of:
 - directional summaries (how often *d*\_CN < *d*\_W),
 - released tables used in the manuscript / Supplementary Tables.
 
-> Note: Raw façade images are **not** included in this bundle. A rights-cleared demo image set is a separate, optional route.
+> Note: The complete raw façade image corpus is not redistributed. A small author-collected demo image set is included under reference_impl_demo/ for the reference implementation.
 
 ## Quick start (CPU-only)
 
@@ -63,11 +63,6 @@ SHA-256 checksums for all tracked files (excluding the checksum file itself) are
 ## License
 
 Code in `scripts/` is released under the license in `LICENSE`. Data products in `derived_outputs/` are provided for verification and reuse subject to the terms described in the manuscript’s data availability statement.
-
-## How to cite
-
-**Cite this fixed version (v1.5.0):** https://doi.org/10.5281/zenodo.18251252  
-**Concept DOI (all versions; resolves to the latest):** https://doi.org/10.5281/zenodo.18221258
 
 ## Environment (recommended)
 
