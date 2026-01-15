@@ -1,8 +1,13 @@
-[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.18221258.svg)](https://doi.org/10.5281/zenodo.18221258)
+<!-- Zenodo DOI badge will be added after Zenodo archives GitHub release tag v1.5.0. -->
+<!-- [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.XXXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXXX) -->
 
-# SFI reproducibility release (public) — v1.4.7.1
+# SFI reproducibility release (public) — v1.5.0
 
-**Cite this fixed version (v1.4.7.1):** https://doi.org/10.5281/zenodo.18221259
+## How to cite
+
+**Cite this fixed version (v1.5.0):** Zenodo DOI pending (will be minted after Zenodo archives GitHub release tag `v1.5.0`).
+
+Temporary reference (until DOI is minted): GitHub Release tag `v1.5.0` (commit `405be6a`).
 
 This release contains **derived, machine-readable outputs** that support the paper’s reported results, together with **minimal scripts** to re-generate the key summary numbers and table-like CSVs from the released derived outputs (CPU-only; no GPU required).
 
