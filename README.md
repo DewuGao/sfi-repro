@@ -4,9 +4,10 @@
 
 ## How to cite
 
-See `CITATION.cff` for the recommended citation metadata (Zenodo DOI included).
+See `CITATION.cff` for the recommended citation metadata.
 
-Temporary reference (until DOI is minted): GitHub Release tag `v1.5.0` (commit `405be6a`).
+Cite this fixed release (v1.5.0): https://doi.org/10.5281/zenodo.18251252  
+Concept DOI (all versions; resolves to the latest): https://doi.org/10.5281/zenodo.18221258
 
 This release contains **derived, machine-readable outputs** that support the paper’s reported results, together with **minimal scripts** to re-generate the key summary numbers and table-like CSVs from the released derived outputs (CPU-only; no GPU required).
 
