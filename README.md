@@ -1,11 +1,10 @@
-<!-- Zenodo DOI badge will be added after Zenodo archives GitHub release tag v1.5.0. -->
-<!-- [![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.XXXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXXX) -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18221258.svg)](https://doi.org/10.5281/zenodo.18221258)
 
 # SFI reproducibility release (public) — v1.5.0
 
 ## How to cite
 
-**Cite this fixed version (v1.5.0):** Zenodo DOI pending (will be minted after Zenodo archives GitHub release tag `v1.5.0`).
+See `CITATION.cff` for the recommended citation metadata (Zenodo DOI included).
 
 Temporary reference (until DOI is minted): GitHub Release tag `v1.5.0` (commit `405be6a`).
 
@@ -66,8 +65,8 @@ Code in `scripts/` is released under the license in `LICENSE`. Data products in 
 
 ## How to cite
 
-See `CITATION.cff` (update with a DOI after archiving on Zenodo/OSF/Figshare).
-
+**Cite this fixed version (v1.5.0):** https://doi.org/10.5281/zenodo.18251252  
+**Concept DOI (all versions; resolves to the latest):** https://doi.org/10.5281/zenodo.18221258
 
 ## Environment (recommended)
 
