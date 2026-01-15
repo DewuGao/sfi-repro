@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "SFI reproducibility release (public)"
-message: "If you use this release package, please cite it."
+message: "If you use this release package, please cite the Zenodo record."
 version: "1.5.0"
 date-released: "2026-01-14"
 license: "MIT"
@@ -23,3 +23,11 @@ authors:
 
 repository-code: "https://github.com/DewuGao/sfi-repro"
 url: "https://github.com/DewuGao/sfi-repro"
+
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.18251252
+    description: "Zenodo DOI for this fixed version (v1.5.0)"
+  - type: doi
+    value: 10.5281/zenodo.18221258
+    description: "Zenodo concept DOI for all versions (resolves to the latest)"
