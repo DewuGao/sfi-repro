@@ -3,10 +3,6 @@
 # SFI reproducibility release (public) — v1.5.0
 **Provenance note.** This v1.5.0 public release is built on the v1.4.7.1 baseline computation pipeline. v1.5.0 adds the derived-output pipeline pseudocode and a runnable demo/minimal reference implementation; the archived derived outputs and reported key numbers remain unchanged.
 
-## Release summary (what this package enables)
-
-This Zenodo/GitHub release provides (i) archived derived outputs supporting the reported results, (ii) minimal CPU-only scripts to verify SHA-256 integrity and regenerate the released table-like CSVs from those archived derived outputs, and (iii) an implementation-independent pseudocode specification of the derived-output pipeline plus a small runnable demo/reference implementation. The complete raw façade image corpus and full-scale metric computation pipeline are not redistributed with the public archive.
-
 ## How to cite
 
 See `CITATION.cff` for the recommended citation metadata.
@@ -14,22 +10,48 @@ See `CITATION.cff` for the recommended citation metadata.
 Cite this fixed release (v1.5.0): https://doi.org/10.5281/zenodo.18251252  
 Concept DOI (all versions; resolves to the latest): https://doi.org/10.5281/zenodo.18221258
 
-This release contains **derived, machine-readable outputs** that support the paper’s reported results, together with **minimal scripts** to re-generate the key summary numbers and table-like CSVs from the released derived outputs (CPU-only; no GPU required).
+This release contains **derived, machine-readable outputs** that support the paper’s reported results, together with **minimal scripts** to re-generate the key summary numbers and table-like CSV files from the released derived outputs (CPU-only; no GPU required).
+
+## Release summary (what this package enables)
+
+This Zenodo/GitHub release provides:
+- **Archived derived outputs** supporting the reported results.
+- **Minimal CPU-only scripts** to (i) verify SHA-256 integrity and (ii) regenerate the released table-like CSV files from the archived derived outputs.
+- **Documentation & demos**: an implementation-independent pseudocode specification of the derived-output pipeline, plus a small runnable demo/reference implementation.
+
+The complete raw façade image corpus and the full-scale metric computation pipeline are **not** redistributed with the public archive.
+
+## Verification scope (what is regenerated)
+
+The verification/reproduction scripts **do not require raw images or GPUs**. They regenerate:
+- `repro_outputs/key_numbers.csv` (key summary numbers), and
+- the released table-like CSV files under `repro_outputs/tables/`,
+from the archived `derived_outputs/`.
+
+## One-command verification
+
+```bash
+python scripts/verify_release.py --root .
+```
+
+This will (i) verify SHA-256 checksums and (ii) regenerate `key_numbers.csv` and the released table-like CSV files under `repro_outputs/` from the archived derived outputs (no raw images or GPUs required).
 
 ## Pseudocode specification (derived-output pipeline)
 
 An implementation-independent pseudocode specification for the derived-output pipeline is provided in:
 - `docs/DERIVED_OUTPUTS_PIPELINE_PSEUDOCODE.md`
 
-This specification clarifies the exact steps and parameters used to regenerate the released table-like CSV files from the archived derived outputs.
+This specification documents the steps and parameters used to regenerate the released table-like CSV files from the archived derived outputs.
 
 It is designed for **independent verification** of:
 - dataset-level counts (e.g., number of evaluation images),
 - metric/dimension configuration (8 metrics; 5 dimensions),
-- directional summaries (how often *d*\_CN < *d*\_W),
+- directional summaries (how often *d*_CN < *d*_W),
 - released tables used in the manuscript / Supplementary Tables.
 
-> Note: The complete raw façade image corpus is not redistributed. A small author-collected demo image set is included under reference_impl_demo/ for the reference implementation.
+## Demo / minimal reference implementation
+
+A small runnable demo image set and minimal reference implementation are provided under `reference_impl_demo/` for functional demonstration (pipeline wiring and deterministic outputs). It is not intended to reproduce the full-scale metric computation from the complete raw-image corpus.
 
 ## Quick start (CPU-only)
 
@@ -47,26 +69,30 @@ Expected outputs:
 
 ## Package contents
 
-- `derived_outputs/distances/`
-  - Long-form directional distances to the Chinese (`d*_CN`) and Western (`d*_W`) reference sets per image and metric.
+(Ordered to match the release directory structure.)
 
-- `derived_outputs/fusion/`
-  - Baseline metric weights (subjective/objective/fused).
+- `audit/` (optional)
+  - Small audit artefacts supporting internal consistency checks (does not require raw images).
 
-- `derived_outputs/dimfs/`
-  - Dimension-level fused scores (DimFS) per image.
-
-- `derived_outputs/validation/`
-  - Released summaries for construct validity, direction-convergent checks, and stability diagnostics (relative CI).
+- `derived_outputs/`
+  - Archived derived outputs used to support the reported results.
+  - `derived_outputs/distances/`
+    - Long-form directional distances to the Chinese (`d*_CN`) and Western (`d*_W`) reference sets per image and metric.
+    - Compressed mirror: `derived_outputs/distances/DIST_master_long_public_v1.csv.gz` (mirror of the `.csv` used by the scripts).
+  - `derived_outputs/fusion/`
+    - Baseline metric weights (subjective/objective/fused).
+  - `derived_outputs/dimfs/`
+    - Dimension-level fused scores (DimFS) per image.
+  - `derived_outputs/validation/`
+    - Released summaries for construct validity, direction-convergent checks, and stability diagnostics (relative CI).
 
 - `docs/`
   - `DERIVED_OUTPUTS_PIPELINE_PSEUDOCODE.md`: implementation-independent pseudocode specification for the derived-output pipeline.
 
 - `metadata/`
   - Controlled vocabularies and mapping tables used to normalise style/site labels for the public release.
-
-- `scripts/`
-  - Minimal reproducibility scripts to verify integrity (SHA-256) and regenerate key summary numbers and released table-like CSVs from the archived derived outputs.
+  - Runlog-to-release mapping: `metadata/file_map.csv`
+  - Site label normalisation: `metadata/site_alias_map_v1.csv`
 
 - `reference_impl_demo/`
   - Optional lightweight demo / reference implementation for validating pipeline wiring and deterministic outputs (does not require the full raw-image corpus).
@@ -74,8 +100,8 @@ Expected outputs:
 - `repro_outputs/`
   - Outputs generated by the reproducibility scripts (e.g., `repro_outputs/key_numbers.csv`, `repro_outputs/tables/table_*.csv`).
 
-- `audit/` (optional)
-  - Small audit artefacts supporting internal consistency checks (does not require raw images).
+- `scripts/`
+  - Minimal reproducibility scripts to verify integrity (SHA-256) and regenerate key summary numbers and released table-like CSV files from the archived derived outputs.
 
 - Root files
   - `checksums_sha256.txt`: SHA-256 checksums for tracked files (integrity verification).
@@ -95,10 +121,6 @@ Expected outputs:
 
 SHA-256 checksums for all tracked files (excluding the checksum file itself) are provided in `checksums_sha256.txt`.
 
-## License
-
-Code in `scripts/` is released under the license in `LICENSE`. Data products in `derived_outputs/` are provided for verification and reuse subject to the terms described in the manuscript’s data availability statement.
-
 ## Environment (recommended)
 
 This release includes a minimal `environment.yml` for conda.
@@ -114,15 +136,11 @@ You may also install via pip:
 pip install -r requirements.txt
 ```
 
+## License
+
+Code in `scripts/` is released under the license in `LICENSE`. Data products in `derived_outputs/` are provided for verification and reuse subject to the terms described in the manuscript’s data availability statement.
 
 ## Compressed mirrors
 
 For convenience, a compressed mirror is provided:
 - `derived_outputs/distances/DIST_master_long_public_v1.csv.gz` (mirror of the `.csv` used by the scripts).
-
-
-## One-command verification
-
-This will (i) verify SHA-256 checksums and (ii) regenerate `key_numbers.csv` and the released table-like CSVs under `repro_outputs/` from the archived derived outputs (no raw images or GPUs required).
-
-This will (i) verify SHA256 checksums and (ii) regenerate `key_numbers.csv` and released tables under `repro_outputs/`.
