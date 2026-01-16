@@ -11,6 +11,12 @@ Cite this fixed release (v1.5.0): https://doi.org/10.5281/zenodo.18251252
 Concept DOI (all versions; resolves to the latest): https://doi.org/10.5281/zenodo.18221258
 
 This release contains **derived, machine-readable outputs** that support the paper’s reported results, together with **minimal scripts** to re-generate the key summary numbers and table-like CSVs from the released derived outputs (CPU-only; no GPU required).
+## Pseudocode specification (derived-output pipeline)
+
+An implementation-independent pseudocode specification for the derived-output pipeline is provided in:
+- `docs/DERIVED_OUTPUTS_PIPELINE_PSEUDOCODE.md`
+
+This specification is intended to clarify the exact steps and parameters used to generate the released table-like CSVs from the archived derived outputs.
 
 It is designed for **independent verification** of:
 - dataset-level counts (e.g., number of evaluation images),
@@ -44,6 +50,8 @@ Expected outputs:
   - Dimension-level fused scores (DimFS) per image.
 - `derived_outputs/validation/`
   - Released summaries for construct validity, direction convergent checks, and stability (relative CI).
+- `docs/`
+  - `DERIVED_OUTPUTS_PIPELINE_PSEUDOCODE.md`: implementation-independent pseudocode specification for the derived-output pipeline.
 - `metadata/`
   - Controlled vocabularies and mapping tables used to normalise style/site labels for the public release.
 - `scripts/`
