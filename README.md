@@ -1,6 +1,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18221258.svg)](https://doi.org/10.5281/zenodo.18221258)
 
 # SFI reproducibility release (public) — v1.5.0
+**Provenance note.** This v1.5.0 public release is built on the v1.4.7.1 baseline computation pipeline. v1.5.0 adds the derived-output pipeline pseudocode and a runnable demo/minimal reference implementation; the archived derived outputs and reported key numbers remain unchanged.
 
 ## How to cite
 
