@@ -3,6 +3,10 @@
 # SFI reproducibility release (public) — v1.5.0
 **Provenance note.** This v1.5.0 public release is built on the v1.4.7.1 baseline computation pipeline. v1.5.0 adds the derived-output pipeline pseudocode and a runnable demo/minimal reference implementation; the archived derived outputs and reported key numbers remain unchanged.
 
+## Release summary (what this package enables)
+
+This Zenodo/GitHub release provides (i) archived derived outputs supporting the reported results, (ii) minimal CPU-only scripts to verify SHA-256 integrity and regenerate the released table-like CSVs from those archived derived outputs, and (iii) an implementation-independent pseudocode specification of the derived-output pipeline plus a small runnable demo/reference implementation. The complete raw façade image corpus and full-scale metric computation pipeline are not redistributed with the public archive.
+
 ## How to cite
 
 See `CITATION.cff` for the recommended citation metadata.
@@ -11,12 +15,13 @@ Cite this fixed release (v1.5.0): https://doi.org/10.5281/zenodo.18251252
 Concept DOI (all versions; resolves to the latest): https://doi.org/10.5281/zenodo.18221258
 
 This release contains **derived, machine-readable outputs** that support the paper’s reported results, together with **minimal scripts** to re-generate the key summary numbers and table-like CSVs from the released derived outputs (CPU-only; no GPU required).
+
 ## Pseudocode specification (derived-output pipeline)
 
 An implementation-independent pseudocode specification for the derived-output pipeline is provided in:
 - `docs/DERIVED_OUTPUTS_PIPELINE_PSEUDOCODE.md`
 
-This specification is intended to clarify the exact steps and parameters used to generate the released table-like CSVs from the archived derived outputs.
+This specification clarifies the exact steps and parameters used to regenerate the released table-like CSV files from the archived derived outputs.
 
 It is designed for **independent verification** of:
 - dataset-level counts (e.g., number of evaluation images),
@@ -118,8 +123,6 @@ For convenience, a compressed mirror is provided:
 
 ## One-command verification
 
-```bash
-python scripts/verify_release.py --root .
-```
+This will (i) verify SHA-256 checksums and (ii) regenerate `key_numbers.csv` and the released table-like CSVs under `repro_outputs/` from the archived derived outputs (no raw images or GPUs required).
 
 This will (i) verify SHA256 checksums and (ii) regenerate `key_numbers.csv` and released tables under `repro_outputs/`.
